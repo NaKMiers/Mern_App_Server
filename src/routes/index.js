@@ -1,10 +1,7 @@
 const postsRouter = require('./posts')
 
 function route(app) {
-   app.use('/', postsRouter)
-   // app.get('/', (req, res) => {
-   //    res.send('<h1>Welcome to Mern App</h1>')
-   // })
+   app.use('/posts', postsRouter)
 }
 
 module.exports = route
