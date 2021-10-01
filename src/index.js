@@ -21,4 +21,4 @@ route(app)
 // connect database (mern_app)
 db.connect()
 
-app.listen(process.env.PORT, () => console.log('Server running on localhost'))
+app.listen(process.env.PORT, () => console.log('Server running on localhost:'))
