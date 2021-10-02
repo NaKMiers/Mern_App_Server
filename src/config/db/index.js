@@ -5,7 +5,7 @@ DB_URL =
 
 async function connect() {
    try {
-      await mongoose.connect(DB_URL)
+      await mongoose.connect('mongodb://localhost:27017/mern_app')
       console.log('Connect Database Success')
    } catch (error) {
       console.log('Connect Database Fail')
