@@ -4,8 +4,8 @@ class PostController {
    // [GET] /posts
    index = async function (req, res) {
       try {
-         const posts = await PostsModel.find()
-         res.status(200).json(posts)
+         // const posts = await PostsModel.find()
+         res.status(200).json({ posts: 'nothing here' })
       } catch (error) {
          res.status(500).json({ error })
       }
